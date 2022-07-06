@@ -1,0 +1,398 @@
+/*--------------------------
+  Referencing Google fonts
+--------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+/*
+
+font-family: 'IBM Plex Mono', monospace;
+
+font-family: 'Ubuntu Mono', monospace;
+
+font-family: 'Playfair Display', serif;
+
+font-family:  'Poppins', sans-serif;
+
+font-family: 'Share Tech', sans-serif;
+*/
+
+/*-------------------
+  Setting up page
+-------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin:0px;
+  padding:0px;
+  font-family:  'Poppins', sans-serif;
+}
+
+#mainFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0px;
+  background-image: linear-gradient(to bottom right, black, #121212, #1d221c,  #1e291e);
+}
+
+::selection{
+  background: #126d14;
+  color: #0e0e11;
+}
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e0e11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #114512;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #114512;
+}
+
+/*---------------
+    Nav Bar
+---------------*/
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navBar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+
+a.navLink{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Ubuntu Mono', monospace;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.active{
+	background: #126d14;
+}
+
+.navLink:hover {
+	color: #000000;
+  background: #126d14;
+  font-weight: bold;
+}
+
+
+
+/*---------------
+    Home Page 
+---------------*/
+
+.introduction{
+  height: 975px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#myName{
+  padding: 12px 0px 12px 0px;
+  background: #0c0c0e;
+  width: 680px;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #242428;
+  font-size: 87px;
+  font-family: 'Share Tech', sans-serif;
+  color: #15371a;
+  text-shadow:
+    0 0 7px #126d14,
+    0 0 10px #28cc2b,
+    0 0 21px #28cc2b,
+    0 0 42px #126e13;
+}
+
+#aboutMe{
+  font-family: 'Share Tech', sans-serif;
+  color: #126d14;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px;
+  background: #0c0c0e;
+  width: 600px;
+  border-radius: 15px;
+  border: 2px solid #242428;
+  margin: 10px 0px 10px 0px;
+  transition: 0.45s;
+}
+
+/*---------------
+    Projects Area
+---------------*/
+
+.sectionHeader{
+  font-size: 66px;
+  font-family: 'Share Tech', sans-serif;
+  color: #15371a;
+  text-shadow:
+    0 0 7px #126d14,
+    0 0 10px #28cc2b;
+  text-align: center;
+}
+
+.sectionText{
+  font-size: 30px;
+  font-family: 'Share Tech', sans-serif;
+  color: #126d14;
+  text-align: center;
+  width: 750px;
+}
+
+.projectPhoto{
+  width: 96%;
+  height: 56%;
+  border-radius: 12px 12px 0px 0px;
+  padding: 2%
+}
+
+.projects{
+  padding: 40px 0px 20px 0px;
+  width: 98vw;
+  height: 542px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projectCards{
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectContainer{
+  width: 275px;
+  height: 360px;
+  background: #15371a;
+  position: relative;
+  border-radius: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  margin: 20px;
+}
+
+.projectContainer:hover{
+  box-shadow: 0 0 12px #28cc2b;
+  transform: scale(1.025);
+}
+
+.textHolder{
+  height: 36%;
+  padding: 2%;
+  width: 96%;
+}
+
+.projectTitle{
+  width: 96%;
+  padding: 2%;
+  text-align: center;
+  font-size: 24px;
+  height: 30%;
+}
+
+.projectText{
+  width: 58%;
+  height: 80px;
+  padding: 0 1% 5.6px 1%;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+}
+
+.iconHolder{
+  width: 40%;
+  height: 84px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.linkIcon{
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.linkIcon:hover{
+  opacity: 1;
+}
+
+#wordleLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*---------------
+  Contact Area
+---------------*/
+
+#contact{
+  padding-top: 50px;
+  width: 98vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#socialsHolder{
+  width: 98vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.social{
+  width: 64px;
+  height: 64px;
+  margin: 0px 15px 0px 15px;
+  position: relative;
+}
+
+
+.contactIcon{
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+
+.contactIcon:hover{
+  filter: invert(26%) sepia(89%) saturate(1583%) hue-rotate(95deg) brightness(30%) contrast(106%);
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#discordTag{
+  position: absolute;
+  top: 60%;
+  z-index: 1;
+  font-size: 48px;
+  transition: .75s;
+  opacity: 0;
+}
+
+/*---------------
+  Media Queries
+---------------*/
+
+@media only screen and (max-width: 1285px) {
+  .projects{
+    height: 962px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #aboutMe{
+    width: 85vw;
+    font-size: 28px;
+  }
+
+  #myName{
+    width: 342px;
+  }
+
+  .sectionText{
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .projects{
+    height: 1762px;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  #discordTag{
+    top: 69%;
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .introduction{
+    height: 1100px;
+  }
+
+  .projects{
+    height: 1775px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .projects{
+    height: 1800px;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .introduction{
+    height: 1250px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .projects{
+    height: 1850px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .introduction{
+    height: 1350px;
+  }
+}

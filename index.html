@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html id="page">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brendan Corcoran</title>
+  <link rel="icon" href="/images/icon.png">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+
+<body>
+
+  <nav>
+    <ul class="navBar">
+      <div class="bg"></div>
+      <li><a class="navLink active" id="homeNav" href="#home" onclick="switchActive('homeNav')">About Me</a></li>
+      <li><a class="navLink" id="projectNav" href="#projects" onclick="switchActive('projectNav')">Projects</a></li>
+      <li><a class="navLink" id="contactNav" href="#contact" onclick="switchActive('contactNav')">Contact</a></li>
+    </ul>
+
+  </nav>
+
+
+  <main id="mainFlex">
+
+    <div class="introduction" id="home">
+      <h1 id="myName">Brendan Corcoran</h1>
+      <p id="aboutMe">I am Brendan Corcoran, a 16 year old developer. I have been actively learning and developing my
+        skills and knowledge with programming languages, and all theory surrounding it, for a year.<br><br>I've
+        come to enjoy and love programming over the past year after learning more and more over time. I am able to
+        understand concepts, syntax and theory quite easily, which assists me in learning how to do new things rather
+        quickly.<br><br>More recently I've learnt back-end languages, gaining a good understanding of how to use them,
+        and currently am learning to apply them at advanced levels. I have also learnt some front-end languages to an
+        intermediate skill level.</p>
+    </div>
+
+
+    <div class="projects" id="projects">
+
+      <h2 class="sectionHeader">Projects</h2>
+      <p class="sectionText">Here are some of the projects I've made, with links to the project itself and the Github
+        repository.</p>
+
+
+      <div id="projectCards">
+        <div class="projectContainer">
+          <img class="projectPhoto" src="/images/mabreloProject.png">
+          <div class="textHolder">
+            <h3 class="projectTitle">Mabrelo Website</h3>
+            <p class="projectText">The website for the company owned by my friends and myself</p>
+            <div class="iconHolder">
+              <a href="https://mabrelo.alexfartdotcum.repl.co/">
+                <img class="linkIcon" src="/images/linkIcon.png">
+              </a>
+              <a href="https://github.com/br3nd0g/Mabrelo-Website">
+                <img class="linkIcon" src="/images/gitIcon.png">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <img class="projectPhoto" src="/images/skscProject.png">
+          <div class="textHolder">
+            <h3 class="projectTitle">Sky Scraper</h3>
+            <p class="projectText">A game I made for Replit's "madeWithReplit" hackathon</p>
+            <div class="iconHolder">
+              <a href="https://replit.com/@brendawg/Sky-Scraper?v=1">
+                <img class="linkIcon" src="/images/linkIcon.png">
+              </a>
+              <a href="https://github.com/br3nd0g/Sky-Scraper">
+                <img class="linkIcon" src="/images/gitIcon.png">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <img class="projectPhoto" src="/images/nftPizPlaProject.png">
+          <div class="textHolder">
+            <h3 class="projectTitle">NFT Pizza Place</h3>
+            <p class="projectText">A website I made for the Replit x Opensea "Hello NFT World" Hackathon</p>
+            <div class="iconHolder">
+              <a href="https://nft-pizza-place.brendawg.repl.co/">
+                <img class="linkIcon" src="/images/linkIcon.png">
+              </a>
+              <a href="https://github.com/br3nd0g/NFT-Pizza-Place">
+                <img class="linkIcon" src="/images/gitIcon.png">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <img class="projectPhoto" src="/images/wordleProject.png">
+          <div class="textHolder">
+            <h3 class="projectTitle">Wordle Solver</h3>
+            <p class="projectText">A python program which solves the daily <a id="wordleLink"
+                href="https://www.nytimes.com/games/wordle/index.html"><b>wordle</b></a></p>
+            <div class="iconHolder">
+              <a href="https://replit.com/@brendawg/Automatic-Wordle-Solver?v=1">
+                <img class="linkIcon" src="/images/linkIcon.png">
+              </a>
+              <a href="https://github.com/br3nd0g/Wordle-Solver">
+                <img class="linkIcon" src="/images/gitIcon.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2 class="sectionHeader" style="margin-bottom: 15px;">Contact Me</h2>
+      <p class="sectionText" style="margin-bottom: 75px;">Feel free to contact me, or check out some more of my work.
+      </p>
+
+      <div id="socialsHolder">
+        <a href="https://www.instagram.com/brendancorcoran_/" class="social">
+          <img class="contactIcon" src="/images/instaIcon.png">
+        </a>
+        <a href="https://github.com/br3nd0g" class="social">
+          <img class="contactIcon" src="/images/gitIcon64.png">
+        </a>
+        <a href="https://twitter.com/br3nd0g" class="social">
+          <img class="contactIcon" src="/images/twitIcon.png">
+        </a>
+        <a href="mailto:brendan.j.corcoran@gmail.com" class="social">
+          <img class="contactIcon" src="/images/mailIcon.png">
+        </a>
+        <a href="https://www.linkedin.com/in/brendan-corcoran-a87b71237/" class="social">
+          <img class="contactIcon" src="/images/linkInIcon.png">
+        </a>
+        <img class="contactIcon" src="/images/discIcon.png" onclick="discordVisibility()" style="margin: 0px 15px 0px 15px;">
+      </div>
+
+      <p class="sectionText" id="discordTag">brendan#8362</p>
+    </div>
+
+  </main>
+  <script>
+    let activeNavItem = document.getElementById("homeNav");
+    let discTagShown = false;
+    const discTag = document.getElementById("discordTag");
+
+    document.addEventListener("scroll", scrollPosCheck);
+
+    function discordVisibility() {
+      if (discTagShown != true) {
+        discTag.style.opacity = 1;
+        discTagShown = true;
+      }
+      else {
+        discTag.style.opacity = 0;
+        discTagShown = false;
+      }
+    }
+
+    function switchActive(current) {
+      activeNavItem.classList.remove('active');
+      activeNavItem = document.getElementById(current);
+      activeNavItem.classList.add('active');
+    }
+
+    function scrollPosCheck() {
+      let homeHeight = document.getElementById("projects").offsetHeight;
+      let projectHeight = document.getElementById("home").offsetHeight;
+      //let contactHeight = document.getElementById("contact").offsetHeight;
+
+      scrollFromTop = page.scrollTop;
+      if (scrollFromTop < homeHeight) {
+        switchActive('homeNav')
+      }
+      else if (scrollFromTop > homeHeight && scrollFromTop < ((homeHeight + projectHeight) - 500)) {
+        switchActive('projectNav')
+      }
+      else {
+        switchActive('contactNav')
+      }
+    }
+  </script>
+
+</body>
+
+</html>
