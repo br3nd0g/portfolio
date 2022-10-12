@@ -9,3 +9,7 @@ When making this, I used a lot of things i already had good knowledge of. The on
 
 ## Next Steps
 In the future I think i may update my portfolio, perhaps with an entire different look, or eventually with more projects to show off, a whole seperate page for projects.
+
+## UPDATE
+
+This site is slowly becoming outdated in relevance to my current skillset, and the effectiveness and maintainability. I will most likely update it to a whole new page soon in the future.
