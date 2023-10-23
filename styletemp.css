@@ -1,0 +1,142 @@
+@font-face {
+  font-family: SuperWoobly;
+  src: url(./fonts/SuperWoobly.ttf);
+}
+
+@font-face {
+  font-family: Undertown;
+  src: url(./fonts/Undertown.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: repeating-linear-gradient(
+    135deg,
+    #000000,
+    #000000 100px,
+    #6b5d1c 100px,
+    #6b5d1c 200px
+  );
+  min-height: 100vh;
+  position: relative;
+}
+
+main{
+  color: #e2f1e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6%;
+  text-align: center;
+}
+
+main > h1{
+  font-family: SuperWoobly;
+  font-size: 70px;
+  margin-top: 60px;
+  background: rgb(202,223,202);
+  background: linear-gradient(176deg, rgba(202,223,202,1) 38%, rgba(126,218,126,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: presence 2.5s ease-in-out infinite alternate;
+}
+
+#text{
+  font-family: Undertown;
+}
+
+#linkToOld{
+  text-decoration: none;
+  margin-left: 5px;
+  color: #49cc21;
+  transition: 0.2s;
+}
+
+#linkToOld:hover{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+#text > h3{
+  font-size: 35px;
+  margin-top: 65px;
+}
+
+#text > p{
+  text-align: right;
+}
+
+#builderHat{
+  position: absolute;
+  left: 0;
+  top: 0;
+  aspect-ratio: 1;
+  height: 150px;
+  transform: rotate(10deg) rotateX(32deg);
+}
+
+#builderHat:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0) rotate(10deg) rotateX(32deg);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes presence {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.075);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0) rotate(10deg) rotateX(32deg);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0) rotate(10deg) rotateX(32deg);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0) rotate(10deg) rotateX(32deg);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0) rotate(10deg) rotateX(32deg);
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  #builderHat{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 683px) {
+  #text > p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  #text > h3{
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  main > h1{
+    font-size: 44px;
+    margin-top: 30px;
+  }
+}
