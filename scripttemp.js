@@ -20,3 +20,6 @@ function positionHat() {
 window.onresize = positionHat;
 
 setTimeout(positionHat, 50)
+setTimeout(positionHat, 100)
+setTimeout(positionHat, 500)
+setTimeout(positionHat, 1000)
