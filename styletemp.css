@@ -1,6 +1,6 @@
 @font-face {
-  font-family: SuperWoobly;
-  src: url(./fonts/SuperWoobly.ttf);
+  font-family: Glass;
+  src: url(./fonts/Glass.ttf);
 }
 
 @font-face {
@@ -35,16 +35,15 @@ main{
 }
 
 main > h1{
-  font-family: SuperWoobly;
+  font-family: Glass;
   font-size: 70px;
   margin-top: 60px;
-  /* background: rgb(202,223,202);
-  background: linear-gradient(176deg, rgba(202,223,202,1) 38%, rgba(126,218,126,1) 100%); */
-  background: rgb(43,43,43);
+  color: #9fcf51;
+  /* background: rgb(43,43,43);
   background: linear-gradient(180deg, rgba(43,43,43,1) 20%, rgba(200,207,15,1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   animation: presence 2.5s ease-in-out infinite alternate;
 }
 

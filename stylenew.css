@@ -1,0 +1,132 @@
+/* BASE DECLARATIONS */
+
+@font-face {
+  font-family: Ruzack;
+  src: url(./fonts/Ruzack.otf) format("opentype");
+}
+
+:root{
+  --background1: #F2E9DC;
+  --background2: #91C499;
+  --text1: #808F85;
+  --text2: #595959;
+  --highlight: #CFD11A;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+body{
+  background-color: var(--background1);
+}
+
+#spacer{
+  width: 100%;
+  height: 200px;
+}
+
+/* TOP-LEFT HEADER RULES */
+
+header{
+  font-family: Ruzack;
+  background: var(--highlight);
+  clip-path: none;
+  font-size: 35px;
+  width: 200px;
+  text-align: center;
+  padding: 20px 25px 40px 0;
+  clip-path: polygon(0 0, 100% 0%, 90% 35%, 90% 70%, 70% 90%, 35% 90%, 0% 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#headerOutline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 228px;
+  height: 144px;
+  clip-path: polygon(0 0, 100% 0%, 90% 35%, 90% 70%, 70% 90%, 35% 90%, 0% 100%);
+  z-index: -1;
+  background-color: black;
+}
+
+/* INTRO */
+
+#shortIntro{
+  width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#shortIntro > p{
+  text-align: center;
+  width: 45%;
+  font-size: 22px;
+  max-width: 492px;
+}
+
+#smile{
+  height: 165px;
+  transform: rotate(12deg);
+}
+
+/* EXPERIENCE */
+
+#experienceArea > h2{
+  font-family: Ruzack;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* -----------
+  SVG BLOBS 
+-------------*/
+
+.blobChildRight, .blobChildLeft{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.blobChildRight{
+  justify-content: flex-end;
+}
+
+.blobChildLeft{
+  justify-content: flex-start;
+}
+
+.rightBlob, .leftBlob{
+  position: relative;
+  aspect-ratio: 1;
+  height: 750px;
+}
+
+.rightBlob{
+  left: 375px;
+}
+
+.leftBlob{
+  right: 375px;
+}
+
+/* specific blobs */
+
+#topCornerBlob{
+  top: -375px;
+}
+
+#leftSecondBlob{
+  top: 475px;
+  right: 25px;
+}

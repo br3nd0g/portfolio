@@ -6,22 +6,47 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-        <script src="sketch.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./stylenew.css">
+        <script src="./scriptnew.js" async defer></script>
     </head>
     <body>
-        <header> <!-- oo keep fixed in upper left ccorner, triangular fragment shape with box-clip or whatver -->
-            Lorem<br>Ipsum
-        </header>
-        <div id="shortIntro"> <!-- Slight brief skim of lorem and a cute graphic idk -->
 
+        <header> <!-- oo keep fixed in upper left ccorner, triangular fragment shape with box-clip or whatver -->
+            BRENDAN<br>CORCORAN
+        </header>
+        <div id="headerOutline"></div>
+
+        <!-- BLOBs START -->
+
+        <div id="topCornerBlob" class="blobChildRight">
+            <svg class="rightBlob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#CFD11A" d="M41.1,-69.6C51.3,-65.3,56.2,-50.3,63,-36.9C69.8,-23.5,78.5,-11.8,77.8,-0.4C77.2,11.1,67.4,22.1,58.3,31.6C49.3,41.1,41.1,49,31.5,54.4C21.9,59.9,10.9,62.8,-0.6,63.9C-12.2,64.9,-24.3,64,-33,58.1C-41.6,52.1,-46.8,41,-57.3,30.5C-67.8,20,-83.6,10,-86.4,-1.6C-89.2,-13.2,-78.9,-26.4,-66.6,-33.9C-54.4,-41.4,-40.2,-43.2,-28.7,-46.8C-17.3,-50.4,-8.7,-55.8,3.4,-61.7C15.4,-67.6,30.9,-73.9,41.1,-69.6Z" transform="translate(100 100)" />
+            </svg>
         </div>
-        <div id="experienceAre">
+
+        <div id="leftSecondBlob" class="blobChildLeft">
+            <svg class="leftBlob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#CFD11A" d="M43,-73.5C53.3,-68.4,57.7,-52.1,62.4,-38C67.2,-23.9,72.3,-11.9,69.9,-1.4C67.5,9.2,57.6,18.4,50.3,28.1C43,37.8,38.3,48,30.3,56.2C22.4,64.5,11.2,70.7,1.4,68.4C-8.5,66,-17,55.1,-29.3,49.3C-41.6,43.6,-57.8,43.2,-62.4,35.8C-67,28.5,-60.1,14.2,-60.1,0C-60,-14.2,-66.8,-28.3,-65.4,-41.3C-64,-54.2,-54.4,-66,-42.2,-69.9C-29.9,-73.9,-15,-70,0.7,-71.2C16.3,-72.4,32.6,-78.5,43,-73.5Z" transform="translate(100 100)" />
+              </svg>
+        </div>
+
+        <!-- BLOBs END -->
+
+        <div id="spacer"></div>
+
+        <div id="shortIntro"> <!-- Slight brief skim of lorem and a cute graphic idk -->
+            <p>Hello, I'm Brendan Corcoran, a developer. Since I started my programming journey at the age of 16, I've come to love and learn many languages, and the theory that surrounds programming.<br><br>I'm well experienced in both front-end and back-end programming, and I'm continuously improving my knowledge in skills in both areas.</p>
+            <svg id="smile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#7E7972" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.507 13.941c-1.512 1.195-3.174 1.931-5.506 1.931-2.334 0-3.996-.736-5.508-1.931l-.493.493c1.127 1.72 3.2 3.566 6.001 3.566 2.8 0 4.872-1.846 5.999-3.566l-.493-.493zm-9.007-5.941c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5-.672-1.5-1.5-1.5zm7 0c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5-.672-1.5-1.5-1.5z"/></svg>
+        </div>
+        <div id="experienceArea">
+            <h2>EXPERIENCE</h2>
             <div id="areasOfExperienceWebMapHighcharts"> <!-- or make with P5.js and post code for web network p5 on git :D -->
 
             </div>
-            <div id="languageExperienceSideBarGraph">
+            <div id="languageExperienceSideBarGraph"> <!-- have an (i) info button that when hovered, all bars go to 100% and a thing comes up saying, "but that doesn't matter, I can learn anything i need to"-->
 
             </div>
             <div id="interestsAndActiveLearning">
@@ -32,6 +57,5 @@
         <div id="descriptionOfMeDetailedWithJobExperience"> <!-- and what i lorem studying too -->
 
         </div>
-        <script src="" async defer></script>
     </body>
 </html>
