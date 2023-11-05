@@ -10,7 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./stylenew.css">
+        <script src="https://code.highcharts.com/10/highcharts.js"></script>
         <script src="./scriptnew.js" async defer></script>
+        <script src="./charts.js" async defer></script>
     </head>
     <body>
 
@@ -41,17 +43,25 @@
             <p>Hello, I'm Brendan Corcoran, a developer. Since I started my programming journey at the age of 16, I've come to love and learn many languages, and the theory that surrounds programming.<br><br>I'm well experienced in both front-end and back-end programming, and I'm continuously improving my knowledge in skills in both areas.</p>
             <svg id="smile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#7E7972" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.507 13.941c-1.512 1.195-3.174 1.931-5.506 1.931-2.334 0-3.996-.736-5.508-1.931l-.493.493c1.127 1.72 3.2 3.566 6.001 3.566 2.8 0 4.872-1.846 5.999-3.566l-.493-.493zm-9.007-5.941c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5-.672-1.5-1.5-1.5zm7 0c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5-.672-1.5-1.5-1.5z"/></svg>
         </div>
-        <div id="experienceArea">
-            <h2>EXPERIENCE</h2>
-            <div id="areasOfExperienceWebMapHighcharts"> <!-- or make with P5.js and post code for web network p5 on git :D -->
 
+        <div id="experienceArea">
+
+            <h2>EXPERIENCE</h2>
+
+            <div id="areasOfExperience"> 
+                <!-- or make with P5.js and post code for web network p5 on git :D -->
+                <h2>Areas Of Experience</h2>
+                <div id="bubbleContainer" style="width:100%; height:400px;"></div>
             </div>
+
             <div id="languageExperienceSideBarGraph"> <!-- have an (i) info button that when hovered, all bars go to 100% and a thing comes up saying, "but that doesn't matter, I can learn anything i need to"-->
 
             </div>
+
             <div id="interestsAndActiveLearning">
 
             </div>
+
         </div>
 
         <div id="descriptionOfMeDetailedWithJobExperience"> <!-- and what i lorem studying too -->
