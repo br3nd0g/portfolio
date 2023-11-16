@@ -50,7 +50,7 @@ header{
   top: 0;
   left: 0;
   width: 228px;
-  height: 144px;
+  height: 146px;
   clip-path: polygon(0 0, 100% 0%, 90% 35%, 90% 70%, 70% 90%, 35% 90%, 0% 100%);
   z-index: -1;
   background-color: black;
