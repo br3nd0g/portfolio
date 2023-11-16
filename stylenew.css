@@ -85,15 +85,23 @@ header{
   font-size: 45px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 #areasOfExperience{
-  padding-left: 300px;
-  width: calc(100% - 300px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#areasOfExperience > h2{
+  
 }
 
 #bubbleContainer{
-
+  width: 600px;
+  height: 300px;
 }
 
 /* -----------
