@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const chart = Highcharts.chart('bubbleContainer', {
         chart: {
             type: 'packedbubble',
+            backgroundColor: null
         },
 
         accessibility: {
@@ -15,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         credits: {
             enabled: false
+        },
+        title: {
+            text: ""
         },
 
         plotOptions: {
