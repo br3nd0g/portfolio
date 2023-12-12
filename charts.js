@@ -40,4 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
             color: "#91C499",
         }]
     });
+
+    console.log("Bubble Chart Loaded...")
 });
