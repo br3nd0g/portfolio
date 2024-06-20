@@ -20,7 +20,14 @@
 }
 
 body{
-  background-color: var(--background1);
+  /* background-color: var(--background1); */
+  background: repeating-linear-gradient(
+    -45deg,
+    #F2E9DC,
+    #F2E9DC 10px,
+    #f2e9dcee 10px,
+    #f2e9dcee 20px
+  );
 }
 
 #spacer{
@@ -96,12 +103,48 @@ header{
 }
 
 #areasOfExperience > h2{
-  
+  padding-right: 350px;
 }
 
 #bubbleContainer{
-  width: 600px;
-  height: 300px;
+  aspect-ratio: 2/1;
+  width: 750px;
+}
+
+#languageExperienceSideBarGraph{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15%;
+  margin-top: 110px;
+}
+
+#langExpText{
+  padding-left: 10px;
+}
+
+#languageExperienceSideBarGraph > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inactiveOption{
+  color: var(--text2);
+}
+
+.inactiveOption:hover{
+  cursor: pointer;
+}
+
+#barSlash{
+  margin: 0 5px;
+}
+
+#langBarGraph{
+  aspect-ratio: 2/1;
+  width: 750px;
 }
 
 /* -----------
@@ -147,4 +190,13 @@ header{
 #leftSecondBlob{
   top: 475px;
   right: 25px;
+}
+
+#rightSecondBlob{
+  top: 1120px;
+}
+
+#rightSecondBlob > .rightBlob{
+  left: calc(375px + 40px);
+  transform: rotate(7deg);
 }
