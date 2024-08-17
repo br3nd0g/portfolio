@@ -8,6 +8,7 @@
 :root{
   --background1: #F2E9DC;
   --background2: #91C499;
+  --border2: #6f9775;
   --text1: #808F85;
   --text2: #595959;
   --highlight: #CFD11A;
@@ -111,40 +112,53 @@ header{
   width: 750px;
 }
 
-#languageExperienceSideBarGraph{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 15%;
-  margin-top: 110px;
+#languages{
+  padding-left: 200px;
+  padding-right: 160px;
+  margin-bottom: 70px;
 }
 
-#langExpText{
-  padding-left: 10px;
+#languages > h2{
+  margin-bottom: 50px;
 }
 
-#languageExperienceSideBarGraph > div{
+#langCarousel{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.inactiveOption{
-  color: var(--text2);
+.carouselDirection{
+  aspect-ratio: 1;
+  width: 40px;
 }
 
-.inactiveOption:hover{
+.carouselDirection:hover{
   cursor: pointer;
 }
 
-#barSlash{
-  margin: 0 5px;
+#leftArrow{
+  transform: rotate(180deg);
 }
 
-#langBarGraph{
-  aspect-ratio: 2/1;
-  width: 750px;
+.langInfo{
+  width: calc(80% - 40px);
+  max-width: calc(400px - 40px);
+  margin: 0 20px;
+  border-radius: 8px;
+  border: 2px solid var(--border2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--background2);
+  color: var(--text);
+  padding: 20px;
+}
+
+.langInfo > h3{
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 /* -----------

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://code.highcharts.com/10/highcharts.js"></script>
+        <script src="https://code.highcharts.com/10/highcharts-more.js"></script>
+        <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
+        <script src="./scriptnew.js" async></script>
+        <script src="./scrappedCharts.js" async defer></script>
+        <style>
+            #languageExperienceSideBarGraph{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 15%;
+                margin-top: 110px;
+            }
+
+            #langExpText{
+                padding-left: 10px;
+            }
+
+            #languageExperienceSideBarGraph > div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .inactiveOption{
+                color: var(--text2);
+            }
+
+            .inactiveOption:hover{
+                cursor: pointer;
+            }
+
+            #barSlash{
+                margin: 0 5px;
+            }
+
+            #langBarGraph{
+                aspect-ratio: 2/1;
+                width: 750px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="languageExperienceSideBarGraph"> <!-- DO NEAR END have an (i) info button that when hovered, all bars go to 100% and a thing comes up saying, "but that doesn't matter, I can learn anything i need to"-->
+            <div id="langExpText">
+                <h2 id="languagesOption" onclick="switchGraph(this)">Languages</h2>
+                <h2 id="barSlash">/</h2>
+                <h2 id="librariesOption" class="inactiveOption" onclick="switchGraph(this)">Libraries</h2>
+            </div> 
+            <div id="langBarGraph"></div>
+        </div>
+    </body>
+</html>

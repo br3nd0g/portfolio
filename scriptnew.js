@@ -52,7 +52,7 @@ const skillsObj = {
         },
         {
             name: "C#",
-            y: 2
+            y: 2.5
         },
         {
             name: "Node.js",
@@ -86,3 +86,7 @@ const skillsObj = {
         }
     }
 };
+
+function carouselSwitch(direction){
+
+}
