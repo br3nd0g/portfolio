@@ -1,5 +1,173 @@
+@font-face {
+    font-family: roman-antique;
+    src: url(./fonts/RomanAntique.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: roman-antique-italic;
+    src: url(./fonts/RomanAntique-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: marola;
+    src: url(./fonts/Marola.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: lower-resolution;
+    src: url(./fonts/LowerResolution.ttf) format('truetype');
+}
+
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-family: roman-antique;
+    background-color: #181818;
+    height: 200vh;
+}
+
+/* LANDING SCREEN */
+
+#landingScreen{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 600px;
+
+    --s: 190px; /* control the size*/
+    --c1: #262626;
+    --c2: #181818;
+    
+    --_g: #0000 90deg,var(--c1) 0;
+    
+    background: 
+        conic-gradient(from 90deg at 2px 2px,var(--_g)),
+        conic-gradient(from 90deg at 1px 1px,var(--_g)),
+        var(--c2);
+
+    background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
+
+    border-bottom: 2px solid #262626;
+}
+
+#landingName{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animatedName{
+    color: #ababab;
+    font-size: 95px;
+    font-family: marola;
+    transform: translateY(15px);
+}
+
+#landingGraphic{
+    width: 40%;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingGraphic > canvas{
+    width: 90%;
+}
+
+@media (max-width: 1300px) {
+
+    .animatedName {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .animatedName {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #landingScreen{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #landingName{
+        width: 100%;
+    }
+
+    #landingGraphic{
+        width: 55%;
+    }
+
+    #landingGraphic > canvas{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 550px){
+
+    #landingName{
+        margin-top: 90px;
+    }
+
+    .animatedName {
+        font-size: 40px;
+    }
+
+    #landingGraphic{
+        width: 65%;
+    }
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+
+  }
+
+/* HEADER */
+
+header{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 300px  auto;
+
+    width: calc(100% - 2px);
+    height: 100px;
+    border-bottom: 1px solid #ababab;
+    background-color: #ababab;
+}
+
+header > *{
+    background-color: #181818;
+}
+
+header > h1{
+    color: #ababab;
+    font-family: marola;
+    text-align: center;
+    font-size: 40px;
+    height: 100%;
 }
 
