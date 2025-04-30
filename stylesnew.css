@@ -29,6 +29,10 @@ body{
     height: 200vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* LANDING SCREEN */
 
 #landingScreen{
@@ -149,25 +153,23 @@ body{
 /* HEADER */
 
 header{
-    display: grid;
-    gap: 1px;
-    grid-template-columns: 300px  auto;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: calc(100% - 2px);
     height: 100px;
     border-bottom: 1px solid #ababab;
-    background-color: #ababab;
-}
-
-header > *{
     background-color: #181818;
 }
 
+
 header > h1{
     color: #ababab;
+    border-right: 1px solid #ababab;
     font-family: marola;
     text-align: center;
     font-size: 40px;
     height: 100%;
+    padding: 0 50px;
 }
 

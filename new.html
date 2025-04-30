@@ -7,12 +7,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./stylesnew.css">
+        <!-- LENIS smoothscroll library -->
+        <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
     </head>
     <body>
 
         <div id="landingScreen">
             <div id="landingName">
-                <h1 class="animatedName">B</h1><h1 class="animatedName">r</h1><h1 class="animatedName">e</h1><h1 class="animatedName">n</h1><h1 class="animatedName">d</h1><h1 class="animatedName">a</h1><h1 class="animatedName">n</h1><h1 class="animatedName">&nbsp</h1><h1 class="animatedName">C</h1><h1 class="animatedName">o</h1><h1 class="animatedName">r</h1><h1 class="animatedName">c</h1><h1 class="animatedName">o</h1><h1 class="animatedName">r</h1><h1 class="animatedName">a</h1><h1 class="animatedName">n</h1>
+                <h1 class="animatedName">B</h1><h1 class="animatedName">r</h1><h1 class="animatedName">e</h1><h1 class="animatedName">n</h1><h1 class="animatedName">d</h1><h1 class="animatedName">a</h1><h1 class="animatedName">n</h1><h1 class="animatedName" id="nameSpace">&nbsp;</h1><h1 class="animatedName">C</h1><h1 class="animatedName">o</h1><h1 class="animatedName">r</h1><h1 class="animatedName">c</h1><h1 class="animatedName">o</h1><h1 class="animatedName">r</h1><h1 class="animatedName">a</h1><h1 class="animatedName">n</h1>
             </div>
             <div id="landingGraphic">
                 <canvas id="netCanvas"></canvas>
@@ -24,6 +27,7 @@
             <div id="filler">s</div>
         </header>
         
+        <script src="./netGraphic.js" async defer></script>
         <script src="./scriptnew.js" async defer></script>
     </body>
 </html>
