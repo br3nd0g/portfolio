@@ -9,9 +9,11 @@
         <link rel="stylesheet" href="./stylesnew.css">
         <!-- LENIS smoothscroll library -->
         <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
-        <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css"> -->
     </head>
     <body>
+
+        <div id="cursor"></div>
 
         <div id="landingScreen">
             <div id="landingName">
@@ -26,8 +28,16 @@
             <h1>Brendan<br>Corcoran</h1>
             <div id="filler">s</div>
         </header>
+
+        <div id="whatIdo">
+            <h1 id="iAmwid" class="slideUpOnView">I am&nbsp;</h1>
+            <h1 id="widText" class="slideUpOnView"></h1>
+        </div>
         
+        <script type="module" src="./scrollBehaviour.js" async defer></script>
         <script src="./netGraphic.js" async defer></script>
+        <script src="./animateOnEntry.js" async defer></script>
+        <script src="./cursor.js" async defer></script>
         <script src="./scriptnew.js" async defer></script>
     </body>
 </html>

@@ -18,6 +18,21 @@
     src: url(./fonts/LowerResolution.ttf) format('truetype');
 }
 
+/* LENIS CSS */
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -32,6 +47,84 @@ body{
 html {
     scroll-behavior: smooth;
 }
+
+/* cursor */
+#cursor {
+    display: none; 
+    pointer-events: none; 
+    position: fixed; 
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1px solid #ababab;
+    background-color: #262626;
+    transform: translate(-50%, -50%); 
+    transform-origin: top left;
+    z-index: 10
+}
+
+.click {
+    scale: 0.8;
+}
+
+.pressable {
+    scale: 1.3;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* CORE ANIMATIONS */
+
+@keyframes slideUp{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.slideUp{
+    animation: slideUp 0.7s ease;
+}
+
+@keyframes slideAway{
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.slideAway{
+    animation: slideAway 0.7s ease;
+}
+
+
 
 /* LANDING SCREEN */
 
@@ -173,3 +266,38 @@ header > h1{
     padding: 0 50px;
 }
 
+/* WID  */
+
+#whatIdo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: calc(100% - 5%);
+    height: 500px;
+    padding-left: 5%;
+}
+
+/* #widHolder{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 600px;
+} */
+
+#whatIdo > h1{
+    color: #ababab;
+    height: auto;
+    display: inline;
+    font-family: roman-antique;
+    font-size: 70px;
+    text-align: center;
+}
+
+.changingText{
+    color: #ababab;
+    height: auto;
+    display: inline;
+    font-family: roman-antique;
+    font-size: 70px;
+    text-align: center;
+}
