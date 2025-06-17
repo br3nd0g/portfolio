@@ -283,6 +283,95 @@ html {
     }
 }
 
+@keyframes scaleBounceRight{
+    0% {
+        transform: scale(1) rotate(-90deg);
+        
+    }
+    50% {
+        transform: scale(1.2) rotate(-90deg);
+    }
+    100% {
+        transform: scale(1) rotate(-90deg);
+    }
+}
+
+@keyframes scaleBounceLeft{
+    0% {
+        transform: scale(1) rotate(90deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(90deg);
+    }
+    100% {
+        transform: scale(1) rotate(90deg);
+    }
+}
+
+@keyframes slideOffRight{
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOffLeft{
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideOffRight{
+    animation: slideOffRight 0.7s;
+}
+
+.slideOffLeft{
+    animation: slideOffLeft 0.7s;
+}
+
+.slideInFromRight{
+    animation: slideInFromRight 0.7s;
+}
+
+.slideInFromLeft{
+    animation: slideInFromLeft 0.7s;
+}
+
 /* HEADER */
 
 header{
@@ -407,6 +496,11 @@ header > h1{
     height: 22px;
     font-size: 20px;
     margin-left: 5px;
+    transition: 0.2s;
+}
+
+.projectOption:hover{
+    background-color: #262626;
 }
 
 #projectsCarousel{
@@ -416,6 +510,8 @@ header > h1{
     width: calc(100%);
     /* border: 1px solid #ababab; */
     height: calc(100% - 100px);
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -450,10 +546,11 @@ header > h1{
 
 .projectTitle{
     font-size: 40px;
+    text-align: center;
 }
 
 .projectDescription{
-    font-size: 24px;
+    font-size: 20px;
     width: 70%;
     padding: 0 7%;
     margin-top: 40px;
@@ -489,12 +586,42 @@ header > h1{
     aspect-ratio: 16/13;
     overflow: hidden;
     position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 0px 69px 4px rgba(171,171,171,0.39);
+
+}
+
+.projectDate{
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .projectImage > img{
     width: 100%;
     position: absolute;
     /* transition: 0.001s; */
+}
+
+#arrowLeft, #arrowRight{
+    width: 6%;
+    filter: invert(72%) sepia(0%) saturate(1022%) hue-rotate(142deg) brightness(97%) contrast(84%);
+    transition: 0.2s;
+}
+
+#arrowLeft{
+    transform: rotate(90deg);
+}
+
+#arrowRight{
+    transform: rotate(-90deg);
+}
+
+#arrowLeft:hover{
+    animation: scaleBounceLeft 1s ease-in-out infinite;
+}
+
+#arrowRight:hover{
+    animation: scaleBounceRight 1s ease-in-out infinite;
 }
 
 /* ABOUT ME SECTION */

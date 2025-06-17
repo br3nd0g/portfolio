@@ -33,7 +33,7 @@ if (!isTouchDevice && !prefersReducedMotion && cursor) {
     document.addEventListener("mouseup", (e) => cursor.classList.remove("click"));
 
     let items = document.querySelectorAll("a, button");
-    items = Array.from(items).concat(Array.from(document.querySelectorAll(".projectOption")));
+    items = Array.from(items).concat(Array.from(document.querySelectorAll(".projectOption, #arrowLeft, #arrowRight")));
 
     items.forEach((item) => {
         item.addEventListener("mouseover", () => {

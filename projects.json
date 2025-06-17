@@ -3,6 +3,7 @@
         {
             "title": "Missing The Target",
             "description": "An informative website that details the climate targets not being met by various countries, to highlight and exemplify the climate crisis not being dealt with. Made as part of an assignment for the first year of my bachelor's degree.",
+            "date": "2024",
             "github": "https://github.com/br3nd0g/Missing-The-Target",
             "liveLink": "https://brendanuva.pythonanywhere.com/",
             "image": "missingTheTarget.png"
@@ -10,64 +11,72 @@
         {
             "title": "True Shuffle",
             "description": "A website that uses the Spotify API to create a copy of a playlist that is truly shuffled, to bypass the algorithmic fake shuffle found on Spotify. (Approved by Spotify)",
+            "date": "2022",
             "github": "https://github.com/br3nd0g/True-Shuffle",
             "liveLink": null,
             "image": "trueShuffle.png"
         },
         {
             "title": "Cyber Angels X Sigra - Cybersecurity",
-            "description": "",
+            "description": "An informational website designed to help healthcare executives to learn about cybersecurity, to help comply with (at the time) upcoming EU regulations. Made for Sigra, who was an external partner for a group project during my bachelor's degree. The text content on the website was created by other group members, while I was responsible for the design and implementation of the website.",
+            "date": "2024",
             "github": "https://github.com/br3nd0g/Cyber-Angels-Cybersecurity",
             "liveLink": "https://cyber4ngels.pythonanywhere.com/",
-            "image": ""
+            "image": "cyberAngels.png"
         }
     ],
 
     "data_science_and_scripts": [
         {
-            "title": "Extraterrestrial beliefs simulation",
-            "description": "",
+            "title": "Extraterrestrial Beliefs Simulation",
+            "description": "A simulation made for an essay as part of a university astronomy elective, that simulates the spread of extraterrestrial beliefs on social media, based on academic literature about information spread on social media and extraterrestrial beliefs.",
+            "date": "2025",
             "github": "https://github.com/br3nd0g/extraterrestrial-belief-simulation",
             "liveLink": null,
-            "image": ""
+            "image": "extraterrestrial.png"
         },
         {
             "title": "Shoombagala Discord Bot",
-            "description": "",
+            "description": "A discord bot made for fun, that allows the user to collect characters from the videogame 'My Singing Monsters' and add them to their collection which is tied to their Discord account. May be deprecated.",
+            "date": "2022",
             "github": "https://github.com/br3nd0g/shoombagala",
             "liveLink": null,
-            "image": ""
+            "image": "shoombagala.png"
         }
     ],
 
     "fun_things": [
         {
-            "title": "Metro Matcher",
-            "description": "",
-            "github": "https://github.com/br3nd0g/Metro-Matcher",
-            "liveLink": "https://brendog.pythonanywhere.com/",
-            "image": ""
+            "title": "Recording",
+            "description": "A game made as part of an assignment for my bachelor's degree, where the player has to 'arrest' people in a crowd. This was made to highlight the ethical dilemmas of live facial recognition technology, and also analyses the dilemma through the lens of preference utilitarianism.",
+            "date": "2025",
+            "github": "https://github.com/br3nd0g/Recording",
+            "liveLink": "https://br3nd0g.github.io/Recording/",
+            "image": "recording.png"
         },
         {
-            "title": "Recording",
-            "description": "",
-            "github": "https://github.com/br3nd0g/Recording",
-            "liveLink": null,
-            "image": ""
+            "title": "Metro Matcher",
+            "description": "A game made for my final year of my high school Computer Science class, where the player is given info on a metro's lines and must draw the metro without knowledge of how it looks. An algorithm then determines the likeliness to the actual metro and ranks them on a leaderboard.",
+            "date": "2023",
+            "github": "https://github.com/br3nd0g/Metro-Matcher",
+            "liveLink": "https://brendog.pythonanywhere.com/",
+            "image": "metromatcher.png"
         },
         {
             "title": "Spice Horde",
-            "description": "",
+            "description": "A game made as part of Replit's Kajam 2022 gamejam for the theme 'Spice'. The game features fending off the 'spice horde' from stealing your spice as a timer counts down. Made using the Kaboom.js game library.",
+            "date": "2022",
             "github": "https://github.com/br3nd0g/Spice-Horde",
             "liveLink": null,
-            "image": ""
+            "image": "spiceHorde.png"
         },
         {
             "title": "Rotating Rectangles Wave",
-            "description": "",
+            "description": "A coding-visual experiment using p5.js, where rectangles rotate and move in a wave-like pattern. Made while bored during a lecture.",
+            "date": "2024",
             "github": "https://github.com/br3nd0g/rotating-rectangles-wave",
-            "liveLink": null,
-            "image": ""
+            "liveLink": "https://br3nd0g.github.io/rotating-rectangles-wave/",
+            "image": "rotatingRectangles.png"
         }
     ]
     

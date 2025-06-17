@@ -1,5 +1,5 @@
 // slide up animations
-const animatedElements = document.querySelectorAll('.slideUpOnView');
+let animatedElements = document.querySelectorAll('.slideUpOnView');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1 
+    threshold: 0.1
 });
 
 animatedElements.forEach(element => observer.observe(element));
