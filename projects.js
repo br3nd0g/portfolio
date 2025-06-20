@@ -185,6 +185,11 @@ function switchProjects(event) {
 
     if(!canSwitchProjectType) return;
 
+    document.querySelectorAll(".projectOption").forEach(projectOption => {
+        projectOption.classList.remove("selectedProjectOption");
+    });
+
+    event.target.classList.add("selectedProjectOption");
     const buttonId = event.target.id;
 
     currentProjectType = buttonId;
