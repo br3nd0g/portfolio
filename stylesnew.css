@@ -112,7 +112,7 @@ html {
 }
 
 .slideUp{
-    animation: slideUp 0.7s ease;
+    animation: slideUp 0.7s ease forwards;
 }
 
 @keyframes slideAway{
@@ -707,12 +707,6 @@ header > h1{
     padding-left: 5%;
 }
 
-#contactLinks > p{
-    color: #ababab;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
 .contactRow{
     display: flex;
     justify-content: start;
@@ -721,15 +715,27 @@ header > h1{
     font-size: 24px;
 }
 
-.contactRow > p{
+.contactRow > p, .contactLink{
+    color: #ababab;
+    font-size: 24px;
+    margin-top: 10px;
+}
 
+#contactLinks > p{
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .contactLink{
     text-decoration: underline;
-    color: #ababab;
 }
 
 .contactLink:hover{
     color: rgb(211, 211, 211);
+}
+
+/* for slide up animation */
+
+.slideUpOnView{
+    opacity: 0;
 }
