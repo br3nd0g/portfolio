@@ -472,6 +472,9 @@ header > h1{
         padding-left: 0;
     }
 
+    #widContainer > h1, .changingText {
+        font-size: 30px;
+    }
 
 }
 
@@ -928,6 +931,17 @@ header > h1{
     #contactLinks > p{
         font-size: 14px;
     }
+
+    #contactLinks{
+        width: calc(100% - 10%);
+        padding: 0 5%;
+    }
+
+    #aboutMeContent{
+        width: calc(100% - 10%);
+        padding: 0 5%;
+    }
+    
 }
 
 /* for slide up animation */
