@@ -55,6 +55,14 @@
             "image": "recording.png"
         },
         {
+            "title": "Fingerstring",
+            "description": "A python program that uses the camera capture along with tensorflow/mediapipe to allow the user to control music with their thumb and index finger.",
+            "date": "2025",
+            "github": "https://github.com/br3nd0g/fingerstring",
+            "liveLink": null,
+            "image": "fingerstring.png"
+        },
+        {
             "title": "Metro Matcher",
             "description": "A game made for my final year of my high school Computer Science class, where the player is given info on a metro's lines and must draw the metro without knowledge of how it looks. An algorithm then determines the likeliness to the actual metro and ranks them on a leaderboard.",
             "date": "2023",

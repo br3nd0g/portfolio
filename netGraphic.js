@@ -12,7 +12,6 @@ function makeGraphic(){
     if(window.innerWidth <= 901){
         canvas.clientHeight = canvas.clientWidth - "200px";
         canvas.height = canvas.clientHeight;
-        console.log("h");
     }
 
     const ctx = canvas.getContext("2d");

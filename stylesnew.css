@@ -399,11 +399,10 @@ header > h1{
 
 #whatIdo{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    width: calc(100% - 5%);
+    width: calc(100%);
     height: 100vh;
-    padding-left: 5%;
     
     --s: 100px;
     --c1: #262626;
@@ -422,22 +421,58 @@ header > h1{
 
 }
 
-#whatIdo > h1{
+#widContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(50% - 5%);
+    height: 100%;
+    padding-left: 5%;
+}
+
+#widGraphic{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#widContainer > h1, .changingText{
     color: #ababab;
     height: auto;
     display: inline;
     font-family: roman-antique;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 
-.changingText{
-    color: #ababab;
-    height: auto;
-    display: inline;
-    font-family: roman-antique;
-    font-size: 70px;
-    text-align: center;
+@media (max-width: 1250px) {
+
+    #widContainer > h1, .changingText {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #whatIdo{
+        flex-direction: column;
+    }
+
+    #widGraphic{
+        height: 50%;
+    }
+
+    #widContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+
 }
 
 /* PROJECTS CSS */
@@ -450,7 +485,7 @@ header > h1{
     height: 100vh;
     width: 100%;
 
-    --s: 25px; /* control the size*/
+    --s: 25px; 
     --c1: #262626;
     --c2: #181818;
     
@@ -477,17 +512,29 @@ header > h1{
     color: #ababab;
     font-family: roman-antique;
     font-size: 55px;
-    width: calc(100% - 5%);
     padding-top: 20px;
     padding-left: 5%;
 }
 
+#projectsHeaderEqualiser{
+    width: 151px;
+    padding-right: 20px;
+}
+
+#projectsOptionsAndDots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%);
+}
+
 #projectsOptions{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 20px;
-    width: calc(100% - 20px);
+    padding-top: 20px;
+    width: calc(100%);
 }
 
 .projectOption{
@@ -502,8 +549,29 @@ header > h1{
     transition: 0.2s;
 }
 
+#projectsDots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: calc(100%);
+}
+
+.projectDot{
+    width: 10px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: #3b3b3b;
+    border: 1px solid #ababab;
+    margin: 0 6px;
+}
+
+.projectDotActive{
+    background-color: #ababab;
+}
+
 .selectedProjectOption{
-    background-color: #262626;
+    background-color: #2f2f2f;
     border-radius: 16px;
 }
 
@@ -553,12 +621,13 @@ header > h1{
 }
 
 .projectTitle{
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
+    padding-left: 7%;
 }
 
 .projectDescription{
-    font-size: 20px;
+    font-size: 18px;
     width: 70%;
     padding: 0 7%;
     margin-top: 40px;
@@ -595,7 +664,7 @@ header > h1{
     overflow: hidden;
     position: relative;
     border-radius: 12px;
-    box-shadow: 0px 0px 69px 4px rgba(171,171,171,0.39);
+    box-shadow: 0px 0px 55px 0px rgba(171,171,171,0.39);
 
 }
 
@@ -611,7 +680,7 @@ header > h1{
 }
 
 #arrowLeft, #arrowRight{
-    width: 6%;
+    width: 64px;
     filter: invert(72%) sepia(0%) saturate(1022%) hue-rotate(142deg) brightness(97%) contrast(84%);
     transition: 0.2s;
 }
@@ -625,11 +694,115 @@ header > h1{
 }
 
 #arrowLeft:hover{
-    animation: scaleBounceLeft 1s ease-in-out infinite;
+    animation: scaleBounceLeft 2s ease-in-out infinite;
 }
 
 #arrowRight:hover{
-    animation: scaleBounceRight 1s ease-in-out infinite;
+    animation: scaleBounceRight 2s ease-in-out infinite;
+}
+
+@media (max-width: 980px) {
+
+    .projectTitle{
+        font-size: 30px;
+        padding-left: 4%;
+    }
+
+    .projectDescription{
+        font-size: 15px;
+        width: 82%;
+        padding: 0 4%;
+        margin-top: 30px;
+    }
+
+    .projectLinks{
+        margin-top: 30px;
+    }
+
+    .githubLink, .websiteLink{
+        aspect-ratio: 1/1;
+        width: 24px;
+        margin: 0 20px;
+    }
+
+    .projectImage{
+        width: 235px;
+        box-shadow: 0px 0px 35px 0px rgba(171,171,171,0.39);
+    }
+
+}
+
+@media (max-width: 730px){
+
+    .project{
+        width: 80%;
+        height: calc(94% - 40px);
+        padding: 20px 0;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .projectLeft, .projectRight{
+        width: 100%;
+    }
+
+    .projectLeft{
+        height: 65%;
+    }
+
+    .projectRight{
+        height: 25%;
+        margin-top: 30px;
+    }
+
+    .projectTitle{
+        width: 90%;
+    }
+
+    .projectDescription{
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .projectImage{
+        width: 235px;
+        box-shadow: 0px 0px 20px 0px rgba(171,171,171,0.39);
+    }
+
+    .projectOption{
+        font-size: 14px;
+        height: auto;
+    }
+}
+
+@media (max-width: 540px){
+
+    .projectTitle{
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .projectDescription{
+        font-size: 13px;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .projectLinks{
+        margin-top: 20px;
+    }
+
+    .githubLink, .websiteLink{
+        aspect-ratio: 1/1;
+        width: 22px;
+        margin: 0 20px;
+    }
+
+    #arrowLeft, #arrowRight{
+        width: 48px;
+    }
 }
 
 /* ABOUT ME SECTION */
@@ -732,6 +905,29 @@ header > h1{
 
 .contactLink:hover{
     color: rgb(211, 211, 211);
+}
+
+@media (max-width: 450px){
+
+    #aboutMeHeader > h3{
+        font-size: 40px;
+    }
+
+    #aboutMeContent{
+        font-size: 18px;
+    }
+
+    .contactRow{
+        font-size: 18px;
+    }
+
+    .contactRow > p, .contactLink{
+        font-size: 18px;
+    }
+
+    #contactLinks > p{
+        font-size: 14px;
+    }
 }
 
 /* for slide up animation */

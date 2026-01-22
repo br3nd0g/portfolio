@@ -29,7 +29,7 @@ function setupProjects() {
     loadProjects().then((json) => {
 
         projectsJson = json;
-        console.log(projectsJson);
+        // console.log(projectsJson);
 
         addInitialProject(true);
     });
@@ -54,7 +54,7 @@ function addInitialProject(isFirstProjectType){
 
     if(isFirstProjectType){
         // add functionality to carousel arrows
-        setupSwitchButtons();
+        enableSwitchButtons();
     }
 
     // add event listeners to project buttons
@@ -69,6 +69,8 @@ function addInitialProject(isFirstProjectType){
             cursor.classList.remove("pressable");
         });
     });
+
+    projectDotsSetup();
 }
 
 function createProjectElement() {
@@ -102,6 +104,8 @@ function switchProject(event){
             currentProjectIndex = 0;
         }
     }
+
+    switchActiveDot();
 
     let previousProjectElement = document.getElementsByClassName("project")[0];
 
@@ -160,8 +164,9 @@ function switchProject(event){
             });
         });
 
-        setupSwitchButtons();
+        enableSwitchButtons();
         canSwitchProjectType = true;
+
     });
 }
 
@@ -200,7 +205,6 @@ function switchProjects(event) {
     previousProjectElement.remove();
 
     addInitialProject(false);
-
 }
 
 function createCard(title, description, githubLink, liveLink, imageName, date) {
@@ -298,7 +302,8 @@ function setupProjectImageScrollEffect() {
     updateImagePositions();
 }
 
-function setupSwitchButtons(){
+function enableSwitchButtons(){
+
     const arrowLeft = document.getElementById("arrowLeft");
     const arrowRight = document.getElementById("arrowRight");
 
@@ -319,5 +324,33 @@ function disableSwitchButtons() {
     }
 }
 
+function projectDotsSetup(){
+    const dotsContainer = document.getElementById("projectsDots");
+
+    dotsContainer.innerHTML = ""; 
+
+    const numberOfProjects = projectsJson[currentProjectType].length;
+
+    for(let i = 0; i < numberOfProjects; i++){
+        const dot = document.createElement("div");
+        dot.classList.add("projectDot");
+        if(i === currentProjectIndex){
+            dot.classList.add("projectDotActive");
+        }
+        dotsContainer.appendChild(dot);
+    }
+}
+
+function switchActiveDot(){
+    const dots = document.querySelectorAll(".projectDot");
+
+    dots.forEach((dot, index) => {
+        if(index === currentProjectIndex){
+            dot.classList.add("projectDotActive");
+        }else{
+            dot.classList.remove("projectDotActive");
+        }
+    });
+}
 
 setupProjects();
